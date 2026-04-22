@@ -128,8 +128,8 @@ const Hero = () => {
         >
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
             <img 
-              src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=1000" 
-              alt="Cargo Ship at Sea" 
+              src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1000" 
+              alt="Beautiful Kyoto Temple" 
               className="w-full aspect-[4/5] object-cover"
             />
           </div>
@@ -152,16 +152,16 @@ const Experience = () => {
     },
     {
       title: "台日交流實習",
-      company: "大島海事學校實習計畫",
+      company: "鹿兒島大島地區實習計畫",
       period: "2025",
       desc: "專注於海運發展與地區文化交流，透過實地考察與研討會增進台日航運合作視野。",
       type: "專業實習"
     },
     {
-      title: "御風輪海上實習",
-      company: "御風輪兩個禮拜實習計畫",
-      period: "2025",
-      desc: "參與航海學術交流計畫，深入研究航海儀器與職業環境。",
+      title: "國際交流訪問",
+      company: "福建大學交流訪問團",
+      period: "2017",
+      desc: "參與跨岸學術交流計畫，深入研究兩岸建築美學與文化歷史背景。",
       type: "學術交流"
     }
   ];
@@ -344,7 +344,7 @@ const SkillsAndLanguages = () => {
               {[
                 { year: '2025', title: '日本大島丸實習計畫', details: '獲選參與鹿兒島大島海運交流實習。' },
                 { year: '2022', title: '越南家鄉', details: '回去當保母，見外公外婆。' },
-                { year: '2016', title: '台日青少年交流', details: '國小隨校赴日參與日本文化交流訪問。' }
+                { year: '2016', title: '台日青少年交流', details: '擔任青少年文化大使參與日本交流訪問。' }
               ].map((item, idx) => (
                 <motion.div 
                   key={idx}
@@ -374,28 +374,36 @@ const MediaSection = () => {
         <SectionHeading icon={Video}>多媒體影音與創作</SectionHeading>
         
         <div className="max-w-3xl mx-auto">
-          <Card className="p-0 overflow-hidden group">
-            <div className="relative aspect-video bg-slate-900">
-              <video 
-                src="/artifacts/kyoto_travel_video.mp4" 
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
-                autoPlay 
-                muted 
-                loop 
-                playsInline
-              />
-              <div className="absolute inset-0 bg-slate-900/10 pointer-events-none" />
-            </div>
-            <div className="p-6 text-center">
-              <div className="flex justify-between items-center mb-2">
-                <h3 className="font-bold text-lg">航向京都：紀錄短片</h3>
-                <span className="px-2 py-1 bg-blue-50 text-blue-600 rounded text-[10px] font-bold uppercase">4K 實拍</span>
+          <a 
+            href="https://drive.google.com/file/d/1MLGioTAa_VogbXtkmdqNCRC6-4gCw6ia/view?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block group"
+          >
+            <Card className="p-0 overflow-hidden relative border-2 border-transparent group-hover:border-blue-500 transition-all">
+              <div className="relative aspect-video bg-slate-900">
+                <img 
+                  src="https://blog-static.kkday.com/zh-tw/blog/wp-content/uploads/2022/09/shutterstock_1623822430.jpg" 
+                  alt="航向京都：紀錄短片"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="px-6 py-2 bg-white text-slate-900 rounded-full font-bold flex items-center gap-2 shadow-lg">
+                    點擊觀看影片 <ExternalLink size={16} />
+                  </div>
+                </div>
               </div>
-              <p className="text-sm text-slate-500 leading-relaxed">
-                一段與家人同遊京都的溫馨紀錄，捕捉櫻花樹下的珍貴時刻與古都美景。
-              </p>
-            </div>
-          </Card>
+              <div className="p-6 text-center">
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="font-bold text-lg">航向京都：紀錄短片</h3>
+                  <span className="px-2 py-1 bg-blue-50 text-blue-600 rounded text-[10px] font-bold uppercase">Google Drive</span>
+                </div>
+                <p className="text-sm text-slate-500 leading-relaxed">
+                  一段與家人同遊京都的溫馨紀錄，捕捉櫻花樹下的珍貴時刻與古都美景。
+                </p>
+              </div>
+            </Card>
+          </a>
         </div>
       </div>
     </section>
@@ -406,13 +414,13 @@ const Work3DSection = () => {
   const works = [
     {
       title: "航運團隊 3D 角色設計",
-      image: "/artifacts/works_3d_team_design.png",
+      image: "https://images.unsplash.com/photo-1549194388-f61be84a6e9e?auto=format&fit=crop&q=80&w=1000",
       description: "以航運管理背景為基礎，創作充滿活力的海員團隊角色。",
       link: "https://studio.tripo3d.ai/3d-model/5e4f33bc-c0aa-48f7-bdc3-22741d8ea149?invite_code=YC6E7N"
     },
     {
       title: "傳統民族文化角色",
-      image: "/artifacts/cultural_character_3d.png",
+      image: "https://images.unsplash.com/photo-1633536726481-465c3676851d?auto=format&fit=crop&q=80&w=1000",
       description: "結合細緻的民族服飾紋理與現代 3D 建模技術，展現文化底蘊。",
       link: "https://studio.tripo3d.ai/3d-model/11b58a7d-c504-4f73-acb8-8376c26705e6?invite_code=YC6E7N"
     }
