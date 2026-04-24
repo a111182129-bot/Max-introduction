@@ -277,6 +277,50 @@ const TravelPlan = () => {
             </AnimatePresence>
           </div>
         </div>
+
+        {/* 旅遊簡報展示區 */}
+        <div className="mt-16 pt-16 border-t border-slate-100">
+          <SectionHeading icon={PlaneTakeoff}>旅遊規劃簡報</SectionHeading>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <a 
+              href="https://docs.google.com/presentation/d/1jpMyHEkMIlgRJ1z_vGdzHOIzkeEEFCf8aGHiV50orAk/edit?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <motion.div 
+                whileHover={{ scale: 1.02 }}
+                className="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white group cursor-pointer"
+              >
+                <img 
+                  src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1000" 
+                  alt="Kyoto Travel Presentation" 
+                  className="w-full aspect-video object-cover"
+                />
+                <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                  <div className="text-center text-white">
+                    <Plane size={48} className="mx-auto mb-4" />
+                    <p className="font-bold text-xl">點擊開啟完整簡報</p>
+                  </div>
+                </div>
+              </motion.div>
+            </a>
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-slate-800">2026 仲夏行：京都櫻花之旅</h3>
+              <p className="text-slate-600 leading-relaxed">
+                這是一份完整的旅遊規劃簡報，包含了詳細的交通接駁、住宿評分比價、以及每日行程的精確時間軸與在地美食推薦。不僅是一份行程表，更是一份帶領您深入京都在地文化的行動指南。
+              </p>
+              <a 
+                href="https://docs.google.com/presentation/d/1jpMyHEkMIlgRJ1z_vGdzHOIzkeEEFCf8aGHiV50orAk/edit?usp=drive_link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg font-bold text-sm shadow-lg shadow-blue-200 hover:bg-blue-700 transition-colors"
+              >
+                <ExternalLink size={16} /> 查看 Google Slides
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
