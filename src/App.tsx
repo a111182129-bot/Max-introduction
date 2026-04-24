@@ -100,7 +100,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg text-slate-600 leading-relaxed max-w-2xl font-medium">
-            國立高雄科技大學 航運管理系畢業。
+            國立高雄科技大學 航運技術系在學中。
             熱愛航運事業、專案管理與跨文化溝通。具備卓越的語言能力，致力於在全球化環境中發揮專業影響力。
           </p>
 
